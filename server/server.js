@@ -9,8 +9,8 @@ const express = require('express');
 const http = require('http');
 const socketio = require('socket.io');
 
-const sicketEvents = require('./web/socket');
-const routes = require('./web/routes');
+// const sicketEvents = require('./web/socket');
+// const routes = require('./web/routes');
 const appConfig = require('./config/app-config');
 
 class Server {
@@ -27,8 +27,8 @@ class Server {
 
     /* Including app Routes starts*/
     includeConfig() {
-            new routes(this.app).routesConfig();
-            new socketEvents(this.socket).socketConfig();
+            //new routes(this.app).routesConfig();
+            //new socketEvents(this.socket).socketConfig();
         }
         /* Including app Routes ends*/
 
